@@ -33,9 +33,9 @@ public class PhotoQuiz {
 		// 5. call the pack() method on the quiz window
 		quizWindow.pack();
 		// 6. ask a question that relates to the image
-		String i = JOptionPane.showInputDialog("What is the corlor of the guy's tie?");
+		String i = JOptionPane.showInputDialog("What is the corlor of this troll?");
 		// 7. print "CORRECT" if the user gave the right answer
-		if (i.equals("red")) {
+		if (i.equals("green")) {
 			System.out.println("correct");
 		}
 		// 8. print "INCORRECT" if the answer is wrong
@@ -46,15 +46,21 @@ public class PhotoQuiz {
 		// this until step 12)
 		quizWindow.remove(guy);
 		// 10. find another image and create it (might take more than one line of code)
-
+      String a = "http://10steps.sg/wp-content/uploads//2012/06/cartoonize-a-picture-in-photoshop-7.jpg";
 		// 11. add the second image to the quiz window
-
+     guy= createImage(i);
 		// 12. pack the quiz window
-
+      quizWindow.pack();
 		// 13. ask another question
-
+       String s=   JOptionPane.showInputDialog("What fruit is in this picture?");
 		// 14+ check answer, say if correct or incorrect, etc.
-
+      if (s.equals("pair")) {
+		System.out.println("correct");
+	}
+      
+      else {
+		System.out.println("incorrect");
+	}
 	}
 
 	private static Component createImage(String imageUrl) throws MalformedURLException {
