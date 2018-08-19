@@ -46,7 +46,7 @@ leftButton.setText("Click me!");
 		// 9. Pack the frame
      frame.pack();
 		// 10. Set the title of the frame to "Demanding Buttons"
-         frame.setTitle("Damanding buttons");
+         frame.setTitle("Demanding buttons");
 	}
 
 	@Override
