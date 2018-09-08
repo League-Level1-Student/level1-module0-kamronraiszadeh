@@ -26,7 +26,7 @@ public class DuelingButtons implements ActionListener {
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 
-	private void createUI() {
+	public void createUI() {
 		// 1. Add the panel to the frame
           frame.add(panel);
 		// 2. Make the frame visible
